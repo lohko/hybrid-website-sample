@@ -1,0 +1,33 @@
+#landingPage {
+  color: #ffffff;
+}
+
+.landingpage_header {
+  font-size: 5rem;
+  margin-top: 40vh;
+}
+
+.landingpage_paragraph {
+  font-size: 1.2rem;
+}
+
+.landingpage_mask {
+  align-content: center;
+}
+
+#landingpage_image_1 {
+  background-image: url("../images/landingpage_image_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+#landingpage_image_2 {
+  background-image: url("../images/landingpage_image_2.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+#landingpage_image_3 {
+  background-image: url("../images/landingpage_image_3.jpg");
+  background-size: cover;
+  height: 100vh;
+}
