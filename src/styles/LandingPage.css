@@ -11,10 +11,6 @@
   font-size: 1.2rem;
 }
 
-.landingpage_mask {
-  align-content: center;
-}
-
 #landingpage_image_1 {
   background-image: url("../images/landingpage_image_1.jpg");
   background-size: cover;

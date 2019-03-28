@@ -27,7 +27,7 @@ class LandingPage extends Component {
                 {/* landingpage_image_1 here */}
                 <MDBMask
                   className="landingpage_mask text-center"
-                  overlay="black-strong"
+                  overlay="black-light"
                 >
                   <h1 className="landingpage_header">
                     Welcome to the Hybrid website!
@@ -44,7 +44,7 @@ class LandingPage extends Component {
                 {/* landingpage_image_2 here */}{" "}
                 <MDBMask
                   className="landingpage_mask text-center"
-                  overlay="black-strong"
+                  overlay="black-light"
                 >
                   <h1 className="landingpage_header">
                     Welcome to the Hybrid website!
@@ -61,7 +61,7 @@ class LandingPage extends Component {
                 {/* landingpage_image_3 here */}
                 <MDBMask
                   className="landingpage_mask text-center"
-                  overlay="black-strong"
+                  overlay="black-light"
                 >
                   <h1 className="landingpage_header">
                     Welcome to the Hybrid website!
