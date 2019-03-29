@@ -16,9 +16,9 @@ class ServicesPage extends Component {
   render() {
     return (
       <div id="servicespage">
-        <MDBContainer>
-          <h2 className="header text-center">Your Services</h2>
-          <p className="grey-text w-responsive text-center mx-auto mb-5">
+        <MDBContainer className="my-5">
+          <h2 className="display-2 text-center">Your Services</h2>
+          <p className="grey-darken-1-text w-responsive text-center mx-auto mb-5">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident, sunt in culpa qui officia deserunt mollit
@@ -26,26 +26,28 @@ class ServicesPage extends Component {
           </p>
 
           <MDBRow>
-            <MDBCol lg="5" className="mb-lg-0 mb-5">
+            <MDBCol lg="5" className="mb-3">
               <img
-                src="https://mdbootstrap.com/img/Photos/Others/images/83.jpg"
+                src="https://images.pexels.com/photos/938965/pexels-photo-938965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                 alt=""
-                className="img-fluid rounded z-depth-1"
+                className="img-fluid rounded z-depth-2"
               />
             </MDBCol>
             <MDBCol lg="7">
               <MDBRow className="mb-3">
-                <MDBCol md="1" size="2">
+                <MDBCol md="1">
                   <MDBIcon
                     far
                     icon="chart-bar"
                     size="2x"
-                    className="indigo-text"
+                    className="deep-purple-text"
                   />
                 </MDBCol>
-                <MDBCol md="11" size="10">
-                  <h5 className="font-weight-bold mb-3">Marketing</h5>
-                  <p className="grey-text">
+                <MDBCol md="11">
+                  <h5 className="font-weight-bold mb-3 paragraph">
+                    Grow your business
+                  </h5>
+                  <p className="grey-darken-1-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing.
                     Reprehenderit maiores nam, aperiam minima elit assumenda
                     voluptate velit.
@@ -58,12 +60,12 @@ class ServicesPage extends Component {
                     far
                     icon="handshake"
                     size="2x"
-                    className="pink-text"
+                    className="deep-purple-text"
                   />
                 </MDBCol>
-                <MDBCol md="11" size="10">
+                <MDBCol md="11">
                   <h5 className="font-weight-bold mb-3">Entertainment</h5>
-                  <p className="grey-text">
+                  <p className="grey-darken-1-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing.
                     Reprehenderit maiores nam, aperiam minima elit assumenda
                     voluptate velit.
@@ -71,12 +73,17 @@ class ServicesPage extends Component {
                 </MDBCol>
               </MDBRow>
               <MDBRow className="mb-3">
-                <MDBCol md="1" size="2">
-                  <MDBIcon far icon="smile" size="2x" className="blue-text" />
+                <MDBCol md="1">
+                  <MDBIcon
+                    fas
+                    icon="user-cog"
+                    size="2x"
+                    className="deep-purple-text"
+                  />
                 </MDBCol>
-                <MDBCol md="11" size="10">
+                <MDBCol md="11">
                   <h5 className="font-weight-bold mb-3">Communication</h5>
-                  <p className="grey-text">
+                  <p className="grey-darken-1-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing.
                     Reprehenderit maiores nam, aperiam minima elit assumenda
                     voluptate velit.

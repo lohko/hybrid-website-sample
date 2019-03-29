@@ -1,49 +1,14 @@
 import React, { Component } from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBIcon } from "mdbreact";
 
 class FooterPage extends Component {
   render() {
     return (
       <div>
-        <MDBFooter
-          color="unique-color-dark"
-          className="page-footer font-small pt-0"
-        >
-          <div style={{ backgroundColor: "#6351ce" }}>
-            <MDBContainer fluid className="text-center text-md-left">
-              <MDBRow className="py-4 d-flex align-items-center">
-                <MDBCol
-                  md="6"
-                  lg="5"
-                  className="text-center text-md-left mb-4 mb-md-0"
-                >
-                  <h6 className="mb-0 white-text">
-                    Get connected with us on social networks!
-                  </h6>
-                </MDBCol>
-                <MDBCol md="6" lg="7" className="text-center text-md-right">
-                  <a className="fb-ic ml-0">
-                    <i className="fab fa-facebook-f white-text mr-lg-4"> </i>
-                  </a>
-                  <a className="tw-ic">
-                    <i className="fab fa-twitter white-text mr-lg-4"> </i>
-                  </a>
-                  <a className="gplus-ic">
-                    <i className="fab fa-google-plus-g white-text mr-lg-4"> </i>
-                  </a>
-                  <a className="li-ic">
-                    <i className="fab fa-linkedin-in white-text mr-lg-4"> </i>
-                  </a>
-                  <a className="ins-ic">
-                    <i className="fab fa-instagram white-text mr-lg-4"> </i>
-                  </a>
-                </MDBCol>
-              </MDBRow>
-            </MDBContainer>
-          </div>
-          <MDBContainer className="mt-5 mb-4 text-center text-md-left">
+        <MDBFooter color="mdb-color darken-4">
+          <MDBContainer className="py-3">
             <MDBRow className="mt-3">
-              <MDBCol md="3" lg="4" xl="3" className="mb-4">
+              <MDBCol md="3">
                 <h6 className="text-uppercase font-weight-bold">
                   <strong>Company name</strong>
                 </h6>
@@ -57,49 +22,52 @@ class FooterPage extends Component {
                   elit.
                 </p>
               </MDBCol>
-              <MDBCol md="2" lg="2" xl="2" className="mb-4">
+              <MDBCol md="3">
                 <h6 className="text-uppercase font-weight-bold">
-                  <strong>Products</strong>
+                  <strong>Social Media</strong>
                 </h6>
                 <hr
                   className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
                   style={{ width: "60px" }}
                 />
                 <p>
-                  <a href="#!">MDBootstrap</a>
+                  <MDBIcon fab className="mr-3" icon="instagram" /> Yourcompany
                 </p>
                 <p>
-                  <a href="#!">MDWordPress</a>
+                  <MDBIcon fab className="mr-3" icon="facebook" /> Yourcompany
                 </p>
                 <p>
-                  <a href="#!">BrandFlow</a>
+                  <MDBIcon fab className="mr-3" icon="twitter" /> Yourcompany
                 </p>
                 <p>
-                  <a href="#!">Bootstrap Angular</a>
+                  <MDBIcon fab className="mr-3" icon="youtube" /> Yourcompany
                 </p>
               </MDBCol>
-              <MDBCol md="3" lg="2" xl="2" className="mb-4">
+              <MDBCol md="3">
                 <h6 className="text-uppercase font-weight-bold">
-                  <strong>Useful links</strong>
+                  <strong>Site navigation</strong>
                 </h6>
                 <hr
                   className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
                   style={{ width: "60px" }}
                 />
                 <p>
-                  <a href="#!">Your Account</a>
+                  <a href="#!">Home</a>
                 </p>
                 <p>
-                  <a href="#!">Become an Affiliate</a>
+                  <a href="#!">Services</a>
                 </p>
                 <p>
-                  <a href="#!">Shipping Rates</a>
+                  <a href="#!">About</a>
                 </p>
                 <p>
-                  <a href="#!">Help</a>
+                  <a href="#!">References</a>
+                </p>
+                <p>
+                  <a href="#!">Contact</a>
                 </p>
               </MDBCol>
-              <MDBCol md="4" lg="3" xl="3" className="mb-4">
+              <MDBCol md="3">
                 <h6 className="text-uppercase font-weight-bold">
                   <strong>Contact</strong>
                 </h6>
@@ -111,10 +79,10 @@ class FooterPage extends Component {
                   <i className="fa fa-home mr-3" /> New York, NY 10012, US
                 </p>
                 <p>
-                  <i className="fa fa-envelope mr-3" /> info@example.com
+                  <i className="fa fa-envelope mr-3" /> info@yourcompany.com
                 </p>
                 <p>
-                  <i className="fa fa-phone mr-3" /> + 01 234 567 88
+                  <i className="fa fa-phone mr-3" /> + 01 234 567 89
                 </p>
                 <p>
                   <i className="fa fa-print mr-3" /> + 01 234 567 89

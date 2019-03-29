@@ -28,9 +28,20 @@ class NavigationBar extends Component {
     return (
       <div>
         <Router>
-          <MDBNavbar className="fixed-top" dark expand="md" id="navbar">
+          <MDBNavbar
+            scrolling
+            transparent
+            color="mdb-color darken-4"
+            className="fixed-top"
+            dark
+            expand="md"
+            style={{
+              fontSize: "1.2rem",
+              boxShadow: "none"
+            }}
+          >
             <MDBNavbarBrand>
-              <strong>Hybrid</strong>
+              <strong>Your Company</strong>
             </MDBNavbarBrand>
             <MDBNavbarToggler onClick={this.toggleCollapse} />
             <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>

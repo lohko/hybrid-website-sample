@@ -7,7 +7,8 @@ import {
   MDBCarouselItem,
   MDBView,
   MDBMask,
-  MDBRow
+  MDBRow,
+  MDBCol
 } from "mdbreact";
 
 class LandingPage extends Component {
@@ -19,40 +20,52 @@ class LandingPage extends Component {
           length={3}
           showControls={true}
           showIndicators={true}
-          id="landingpage_carousel"
         >
           <MDBCarouselInner>
             <MDBCarouselItem itemId="1">
               <MDBView id="landingpage_image_1">
                 {/* landingpage_image_1 here */}
                 <MDBMask
-                  className="landingpage_mask text-center"
+                  className="d-flex justify-content-center align-items-center"
                   overlay="black-light"
                 >
-                  <h1 className="landingpage_header">
-                    Welcome to the Hybrid website!
-                  </h1>
-                  <p className="landingpage_paragraph">
-                    This landing page. You can have photos of your company
-                    played here!
-                  </p>
+                  <MDBContainer className="px-md-3 px-sm-0">
+                    <MDBRow>
+                      <MDBCol md="12" className="mb-4 white-text text-center">
+                        <h1 className="display-1 mb-0 pt-md-5">
+                          Hybrid website sample
+                        </h1>
+
+                        <h5 className="mt-2 mb-4">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit deleniti consequuntur nihil.
+                        </h5>
+                      </MDBCol>
+                    </MDBRow>
+                  </MDBContainer>
                 </MDBMask>
               </MDBView>
             </MDBCarouselItem>
             <MDBCarouselItem itemId="2">
               <MDBView id="landingpage_image_2">
-                {/* landingpage_image_2 here */}{" "}
                 <MDBMask
-                  className="landingpage_mask text-center"
+                  className="d-flex justify-content-center align-items-center"
                   overlay="black-light"
                 >
-                  <h1 className="landingpage_header">
-                    Welcome to the Hybrid website!
-                  </h1>
-                  <p className="landingpage_paragraph">
-                    This landing page. You can have photos of your company
-                    played here!
-                  </p>
+                  <MDBContainer className="px-md-3 px-sm-0">
+                    <MDBRow>
+                      <MDBCol md="12" className="mb-4 white-text text-center">
+                        <h1 className="display-1 mb-0 pt-md-5">
+                          Hybrid website sample
+                        </h1>
+
+                        <h5 className=" mt-2 mb-4">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit deleniti consequuntur nihil.
+                        </h5>
+                      </MDBCol>
+                    </MDBRow>
+                  </MDBContainer>
                 </MDBMask>
               </MDBView>
             </MDBCarouselItem>
@@ -60,16 +73,23 @@ class LandingPage extends Component {
               <MDBView id="landingpage_image_3">
                 {/* landingpage_image_3 here */}
                 <MDBMask
-                  className="landingpage_mask text-center"
+                  className="d-flex justify-content-center align-items-center"
                   overlay="black-light"
                 >
-                  <h1 className="landingpage_header">
-                    Welcome to the Hybrid website!
-                  </h1>
-                  <p className="landingpage_paragraph">
-                    This landing page. You can have photos of your company
-                    played here!
-                  </p>
+                  <MDBContainer className="px-md-3 px-sm-0">
+                    <MDBRow>
+                      <MDBCol md="12" className="mb-4 white-text text-center">
+                        <h1 className="display-1 mb-0 pt-md-5">
+                          Hybrid website sample
+                        </h1>
+
+                        <h5 className="mt-2 mb-4">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit deleniti consequuntur nihil.
+                        </h5>
+                      </MDBCol>
+                    </MDBRow>
+                  </MDBContainer>
                 </MDBMask>
               </MDBView>
             </MDBCarouselItem>

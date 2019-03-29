@@ -1,16 +1,3 @@
-#landingPage {
-  color: #ffffff;
-}
-
-.landingpage_header {
-  font-size: 5rem;
-  margin-top: 40vh;
-}
-
-.landingpage_paragraph {
-  font-size: 1.2rem;
-}
-
 #landingpage_image_1 {
   background-image: url("../images/landingpage_image_1.jpg");
   background-size: cover;
