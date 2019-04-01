@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../styles/NavigationBar.css";
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -8,10 +7,6 @@ import {
   MDBNavLink,
   MDBNavbarToggler,
   MDBCollapse,
-  MDBDropdown,
-  MDBDropdownToggle,
-  MDBDropdownMenu,
-  MDBDropdownItem,
   MDBIcon
 } from "mdbreact";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -46,20 +41,20 @@ class NavigationBar extends Component {
             <MDBNavbarToggler onClick={this.toggleCollapse} />
             <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
               <MDBNavbarNav right>
-                <MDBNavItem>
-                  <MDBNavLink to="#!">Home</MDBNavLink>
+                <MDBNavItem active>
+                  <MDBNavLink to="/">Home</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink to="#!">Services</MDBNavLink>
+                  <MDBNavLink to="/Services">Services</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink to="#!">About</MDBNavLink>
+                  <MDBNavLink to="/About">About</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink to="#!">References</MDBNavLink>
+                  <MDBNavLink to="/References">References</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink to="#!">Contact</MDBNavLink>
+                  <MDBNavLink to="/Contact">Contact</MDBNavLink>
                 </MDBNavItem>
               </MDBNavbarNav>
             </MDBCollapse>

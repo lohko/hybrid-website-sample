@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import NavigationBar from "../src/pages/NavigationBar";
+import NavigationBar from "../src/pages/components/NavigationBar";
 import LandingPage from "../src/pages/LandingPage";
 import ServicesPage from "./pages/ServicesPage";
 import FooterPage from "./pages/FooterPage";
