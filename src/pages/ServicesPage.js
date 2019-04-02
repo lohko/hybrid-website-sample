@@ -17,7 +17,9 @@ class ServicesPage extends Component {
     return (
       <div id="servicespage">
         <MDBContainer className="my-5">
-          <h2 className="display-2 text-center">Your Services</h2>
+          <h2 className="h1-responsive font-weight-bold text-center">
+            Your Services
+          </h2>
           <p className="grey-darken-1-text w-responsive text-center mx-auto mb-5">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat

@@ -3,6 +3,8 @@ import "./App.css";
 import NavigationBar from "../src/pages/components/NavigationBar";
 import LandingPage from "../src/pages/LandingPage";
 import ServicesPage from "./pages/ServicesPage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 import FooterPage from "./pages/FooterPage";
 
 class App extends Component {
@@ -12,6 +14,8 @@ class App extends Component {
         <NavigationBar />
         <LandingPage />
         <ServicesPage />
+        <AboutPage />
+        <ContactPage />
         <FooterPage />
       </div>
     );
