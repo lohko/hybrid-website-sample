@@ -10,6 +10,9 @@ import {
   MDBRow,
   MDBCol
 } from "mdbreact";
+import References from "./ReferencesPage"
+import phone from "../images/art.jpg"
+import kuva from "../images/kuva.jpg"
 
 class LandingPage extends Component {
   render() {
@@ -95,6 +98,54 @@ class LandingPage extends Component {
             </MDBCarouselItem>
           </MDBCarouselInner>
         </MDBCarousel>
+        <MDBContainer className="text-center py-5 my-5">
+          <h3>Otsikko</h3>
+          <h6 style={{margin:"70px"}}>Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit deleniti consequuntur nihil.Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit deleniti consequuntur nihil.Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit deleniti consequuntur nihil.</h6>
+        </MDBContainer>
+        <MDBRow>
+        <MDBCol style={{paddingRight:"0"}}>
+          <img
+            tag="img"
+            src={kuva}
+            className="img-fluid"
+            alt="image"
+            >
+          </img>
+        </MDBCol>
+        <MDBCol style={{paddingLeft:"0"}} className="text-center align-items-center d-flex">
+          <MDBRow  >
+            <h1 style={{margin:"auto"}}>Otsikko</h1>
+            <p style={{margin:"auto"}}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit deleniti consequuntur nihil.
+            </p>
+          </MDBRow>
+        </MDBCol>
+        </MDBRow>
+        <MDBRow>
+        <MDBCol style={{paddingRight:"0"}} className="text-center align-items-center d-flex">
+          <MDBRow  >
+            <h1 style={{margin:"auto"}}>Otsikko</h1>
+            <p style={{margin:"auto"}}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit deleniti consequuntur nihil.
+            </p>
+          </MDBRow>
+        </MDBCol>
+        <MDBCol style={{paddingLeft:"0"}}>
+          <img
+            tag="img"
+            src={kuva}
+            className="img-fluid"
+            alt="image"
+            >
+          </img>
+        </MDBCol>
+        </MDBRow>
+        <References></References>
       </div>
     );
   }

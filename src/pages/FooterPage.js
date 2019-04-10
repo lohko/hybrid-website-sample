@@ -52,19 +52,16 @@ class FooterPage extends Component {
                   style={{ width: "60px" }}
                 />
                 <p>
-                  <a href="#!">Home</a>
+                  <a href="/">Home</a>
                 </p>
                 <p>
-                  <a href="#!">Services</a>
+                  <a href="/Services">Services</a>
                 </p>
                 <p>
-                  <a href="#!">About</a>
+                  <a href="/About">About</a>
                 </p>
                 <p>
-                  <a href="#!">References</a>
-                </p>
-                <p>
-                  <a href="#!">Contact</a>
+                  <a href="/Contact">Contact</a>
                 </p>
               </MDBCol>
               <MDBCol md="3">
@@ -76,7 +73,7 @@ class FooterPage extends Component {
                   style={{ width: "60px" }}
                 />
                 <p>
-                  <i className="fa fa-home mr-3" /> New York, NY 10012, US
+                  <i className="fa fa-home mr-3" /> Turku, 12345, FI
                 </p>
                 <p>
                   <i className="fa fa-envelope mr-3" /> info@yourcompany.com
@@ -93,7 +90,7 @@ class FooterPage extends Component {
           <div className="footer-copyright text-center py-3">
             <MDBContainer fluid>
               &copy; {new Date().getFullYear()} Copyright:{" "}
-              <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+              <a href="https://www.lohkosoftware.com"> Lohkosoftware.com </a>
             </MDBContainer>
           </div>
         </MDBFooter>

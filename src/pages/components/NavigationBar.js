@@ -49,9 +49,6 @@ class NavigationBar extends Component {
                   <MDBNavLink to="/About">About</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink to="/References">References</MDBNavLink>
-                </MDBNavItem>
-                <MDBNavItem>
                   <MDBNavLink to="/Contact">Contact</MDBNavLink>
                 </MDBNavItem>
               </MDBNavbarNav>
