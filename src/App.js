@@ -6,18 +6,19 @@ import ServicesPage from "./pages/ServicesPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import FooterPage from "./pages/FooterPage";
+import Routes from "./pages/components/Routes"
+import { BrowserRouter as Router } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <NavigationBar />
-        <LandingPage />
-        <ServicesPage />
-        <AboutPage />
-        <ContactPage />
-        <FooterPage />
-      </div>
+        <Router>
+          <div>
+            <Routes></Routes>
+            <NavigationBar />
+            <FooterPage />
+          </div>
+        </Router>
     );
   }
 }

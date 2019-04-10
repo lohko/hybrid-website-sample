@@ -10,7 +10,7 @@ import {
   MDBIcon
 } from "mdbreact";
 import { BrowserRouter as Router } from "react-router-dom";
-
+import Routes from "./Routes"
 class NavigationBar extends Component {
   state = {
     isOpen: false
@@ -21,8 +21,6 @@ class NavigationBar extends Component {
   };
   render() {
     return (
-      <div>
-        <Router>
           <MDBNavbar
             scrolling
             transparent
@@ -59,8 +57,6 @@ class NavigationBar extends Component {
               </MDBNavbarNav>
             </MDBCollapse>
           </MDBNavbar>
-        </Router>
-      </div>
     );
   }
 }
