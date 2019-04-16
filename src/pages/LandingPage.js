@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "../styles/LandingPage.css";
+import NavigationBar from "../pages/components/NavigationBar";
+
 import {
   MDBContainer,
   MDBCarousel,
@@ -16,8 +18,11 @@ import kuva from "../images/kuva.jpg"
 
 class LandingPage extends Component {
   render() {
+    const transparency = 'transparent';
+    const fixed = "top";
     return (
       <div id="landingPage">
+        <NavigationBar navfixed={fixed} transparency={transparency}/>
         <MDBCarousel
           activeItem={1}
           length={3}

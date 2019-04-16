@@ -7,18 +7,21 @@ import {
   MDBBtn,
   MDBInput
 } from "mdbreact";
+import NavigationBar from "../pages/components/NavigationBar";
+
 class ContactPage extends Component {
   render() {
+    const transparency = '';
+    const fixed = "";
     return (
       <div>
-        <MDBContainer>
-          <h2 className="h1-responsive font-weight-bold text-center my-5">
+        <NavigationBar navfixed={fixed} transparency={transparency}/>
+        <MDBContainer className="my-5">
+          <h2 className="h1-responsive font-weight-bold text-center">
             Contact us
           </h2>
           <p className="text-center w-responsive mx-auto pb-5">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-            error amet numquam iure provident voluptate esse quasi, veritatis
-            totam voluptas nostrum quisquam eum porro a pariatur veniam.
+            Yrityksesi yhteystiedot
           </p>
           <MDBRow>
             <MDBCol md="9" className="md-0 mb-5">
@@ -80,7 +83,7 @@ class ContactPage extends Component {
                     size="2x"
                     className="blue-text"
                   />
-                  <p>San Francisco, CA 94126, USA</p>
+                <p>Turku, FI</p>
                 </li>
                 <li>
                   <MDBIcon icon="phone" size="2x" className="blue-text mt-4" />

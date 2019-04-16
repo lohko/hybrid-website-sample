@@ -12,21 +12,23 @@ import {
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./Routes"
 class NavigationBar extends Component {
-  state = {
-    isOpen: false
-  };
-
+    constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: false,
+    };
+    }
   toggleCollapse = () => {
     this.setState({ isOpen: !this.state.isOpen });
   };
   render() {
     return (
           <MDBNavbar
-            scrolling
-            transparent
             color="mdb-color darken-4"
-            className="fixed-top"
+            transparent={this.props.transparency}
             dark
+            fixed={this.props.navfixed}
+            scrolling
             expand="md"
             style={{
               fontSize: "1.2rem",
@@ -43,7 +45,7 @@ class NavigationBar extends Component {
                   <MDBNavLink to="/">Home</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink to="/Services">Services</MDBNavLink>
+                  <MDBNavLink onClick={this.click} to="/Services">Services</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
                   <MDBNavLink to="/About">About</MDBNavLink>

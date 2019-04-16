@@ -10,12 +10,12 @@ import Routes from "./pages/components/Routes"
 import { BrowserRouter as Router } from 'react-router-dom';
 
 class App extends Component {
+
   render() {
     return (
         <Router>
           <div>
             <Routes></Routes>
-            <NavigationBar />
             <FooterPage />
           </div>
         </Router>

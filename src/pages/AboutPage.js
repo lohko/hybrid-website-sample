@@ -8,25 +8,30 @@ import {
   MDBCardBody,
   MDBIcon
 } from "mdbreact";
+import NavigationBar from "../pages/components/NavigationBar";
 
 import womanprofilepic from "../images/woman.jpg"
 import manprofilepic from "../images/man.jpg"
 
 class AboutPage extends Component {
   render() {
+    const transparency = '';
+    const fixed = "";
     return (
       <div>
+        <NavigationBar navfixed={fixed} transparency={transparency}/>
+        <MDBContainer className="my-5">
+          <h2 className="h1-responsive font-weight-bold text-center">
+            Yritykseni
+          </h2>
+          <p className="text-center w-responsive mx-auto pb-5">
+             Yrityksesi työntekijöiden esittely
+          </p>
         <MDBCard
-          className="my-5 px-5 pb-1 text-center"
+          className="text-center"
           style={{ boxShadow: "none" }}
         >
           <MDBCardBody>
-            <h2 className="h1-responsive font-weight-bold my-5 text-center">
-              Yritykseni
-            </h2>
-            <p className="grey-text w-responsive mx-auto mb-5">
-               Yrityksesi työntekijöiden esittely
-            </p>
             <MDBRow className="text-md-left">
               <MDBCol lg="6" md="12" className="mb-5">
                 <MDBCol md="4" lg="6" className="float-left">
@@ -146,6 +151,7 @@ class AboutPage extends Component {
             </MDBRow>
           </MDBCardBody>
         </MDBCard>
+        </MDBContainer>
       </div>
     );
   }

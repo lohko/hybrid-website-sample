@@ -1,10 +1,33 @@
 import React, { Component } from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBIcon } from "mdbreact";
+import { MDBCol,MDBLink,MDBBtn, MDBContainer, MDBRow, MDBFooter, MDBIcon, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from "mdbreact";
 
 class FooterPage extends Component {
+  state = {
+  modal: false
+}
+toggle = () => {
+  this.setState({
+    modal: !this.state.modal
+  });
+}
+
   render() {
     return (
       <div>
+        <MDBModal isOpen={this.state.modal} toggle={this.toggle}>
+         <MDBModalHeader toggle={this.toggle}>Submit to our newsletter!</MDBModalHeader>
+         <MDBModalBody>
+           <label htmlFor="formGroupExampleInput">Enter your email</label>
+              <input
+                type="email"
+                className="form-control"
+                id="formGroupExampleInput"
+              />
+          </MDBModalBody>
+         <MDBModalFooter className="justify-content-center">
+           <MDBBtn color="secondary" onClick={this.toggle}>Submit</MDBBtn>
+         </MDBModalFooter>
+       </MDBModal>
         <MDBFooter color="mdb-color darken-4">
           <MDBContainer className="py-3">
             <MDBRow className="mt-3">
@@ -16,11 +39,12 @@ class FooterPage extends Component {
                   className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
                   style={{ width: "60px" }}
                 />
+                <a color="secondary">
                 <p>
-                  Here you can use rows and columns here to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
+                  Order our news letter!
+                    <MDBIcon onClick={this.toggle} style={{marginLeft:"10px"}} far icon="envelope" />
                 </p>
+              </a>
               </MDBCol>
               <MDBCol md="3">
                 <h6 className="text-uppercase font-weight-bold">

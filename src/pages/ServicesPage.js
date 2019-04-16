@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../styles/Global.css";
-
+import NavigationBar from "../pages/components/NavigationBar";
 import {
   MDBRow,
   MDBCol,
@@ -14,8 +14,11 @@ import {
 
 class ServicesPage extends Component {
   render() {
+    const transparency = '';
+    const fixed = "";
     return (
       <div id="servicespage">
+        <NavigationBar navfixed={fixed} transparency={transparency}/>
         <MDBContainer className="my-5">
           <h2 className="h1-responsive font-weight-bold text-center">
             Your Services
