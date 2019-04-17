@@ -19,7 +19,7 @@ class AboutPage extends Component {
     const fixed = "";
     return (
       <div>
-        <NavigationBar navfixed={fixed} transparency={transparency}/>
+        <NavigationBar navfixed={fixed} transparency={transparency} aboutactive="active"/>
         <MDBContainer className="my-5">
           <h2 className="h1-responsive font-weight-bold text-center">
             Yritykseni

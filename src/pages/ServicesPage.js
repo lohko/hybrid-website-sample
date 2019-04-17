@@ -18,7 +18,7 @@ class ServicesPage extends Component {
     const fixed = "";
     return (
       <div id="servicespage">
-        <NavigationBar navfixed={fixed} transparency={transparency}/>
+        <NavigationBar navfixed={fixed} transparency={transparency} servicesactive="active"/>
         <MDBContainer className="my-5">
           <h2 className="h1-responsive font-weight-bold text-center">
             Your Services

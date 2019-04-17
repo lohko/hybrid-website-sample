@@ -41,16 +41,16 @@ class NavigationBar extends Component {
             <MDBNavbarToggler onClick={this.toggleCollapse} />
             <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
               <MDBNavbarNav right>
-                <MDBNavItem active>
+                <MDBNavItem active={this.props.homeactive}>
                   <MDBNavLink to="/">Home</MDBNavLink>
                 </MDBNavItem>
-                <MDBNavItem>
+                <MDBNavItem active={this.props.servicesactive}>
                   <MDBNavLink onClick={this.click} to="/Services">Services</MDBNavLink>
                 </MDBNavItem>
-                <MDBNavItem>
+                <MDBNavItem active={this.props.aboutactive}>
                   <MDBNavLink to="/About">About</MDBNavLink>
                 </MDBNavItem>
-                <MDBNavItem>
+                <MDBNavItem active={this.props.contactactive}>
                   <MDBNavLink to="/Contact">Contact</MDBNavLink>
                 </MDBNavItem>
               </MDBNavbarNav>

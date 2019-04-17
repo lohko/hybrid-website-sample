@@ -15,14 +15,18 @@ import {
 import References from "./ReferencesPage"
 import phone from "../images/art.jpg"
 import kuva from "../images/kuva.jpg"
+import kuva2 from "../images/kuva2.jpg"
+import chart from "../images/chart.jpg"
+
 
 class LandingPage extends Component {
   render() {
     const transparency = 'transparent';
     const fixed = "top";
+    const active = "active"
     return (
       <div id="landingPage">
-        <NavigationBar navfixed={fixed} transparency={transparency}/>
+        <NavigationBar navfixed={fixed} transparency={transparency} homeactive={active}/>
         <MDBCarousel
           activeItem={1}
           length={3}
@@ -43,10 +47,8 @@ class LandingPage extends Component {
                         <h1 className="display-1 mb-0 pt-md-5">
                           Hybrid website sample
                         </h1>
-
                         <h5 className="mt-2 mb-4">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit deleniti consequuntur nihil.
+                          Keep in mind that this is an empty canvas. We will craft it just like you want it.
                         </h5>
                       </MDBCol>
                     </MDBRow>
@@ -68,8 +70,7 @@ class LandingPage extends Component {
                         </h1>
 
                         <h5 className=" mt-2 mb-4">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit deleniti consequuntur nihil.
+                          Keep in mind that this is an empty canvas. We will craft it just like you want it.
                         </h5>
                       </MDBCol>
                     </MDBRow>
@@ -92,8 +93,7 @@ class LandingPage extends Component {
                         </h1>
 
                         <h5 className="mt-2 mb-4">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit deleniti consequuntur nihil.
+                          Keep in mind that this is an empty canvas. We will craft it just like you want it.
                         </h5>
                       </MDBCol>
                     </MDBRow>
@@ -104,24 +104,22 @@ class LandingPage extends Component {
           </MDBCarouselInner>
         </MDBCarousel>
         <MDBContainer className="text-center py-5 my-5">
-          <h3>Otsikko</h3>
-          <h6 style={{margin:"70px"}}>Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit deleniti consequuntur nihil.Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit deleniti consequuntur nihil.Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit deleniti consequuntur nihil.</h6>
+          <h3>Hybrid</h3>
+          <h6 style={{margin:"70px"}}>
+              Hybrid sivut sisältävät scrollattavan etusivun ja lisäksi sisältösivuja joissa voit kertoa tarkemmin esimerkiksi yrityksesi toiminnasta, palveluista ja yrityksen työntekijöistä.</h6>
         </MDBContainer>
-        <MDBRow>
-        <MDBCol style={{paddingRight:"0"}}>
+        <MDBRow >
+        <MDBCol md="6" style={{paddingRight:"0"}}>
           <img
             tag="img"
-            src={kuva}
+            src={chart}
             className="img-fluid"
             alt="image"
             >
           </img>
         </MDBCol>
-        <MDBCol style={{paddingLeft:"0"}} className="text-center align-items-center d-flex">
-          <MDBRow  >
+        <MDBCol md="6"  style={{marginLeft:"0",paddingLeft:"0"}} className="text-center align-items-center d-flex">
+          <MDBRow>
             <h1 style={{margin:"auto"}}>Otsikko</h1>
             <p style={{margin:"auto"}}>
               Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -131,8 +129,8 @@ class LandingPage extends Component {
         </MDBCol>
         </MDBRow>
         <MDBRow>
-        <MDBCol style={{paddingRight:"0"}} className="text-center align-items-center d-flex">
-          <MDBRow  >
+        <MDBCol md="6" className="md-0 mb-4" style={{marginRight:"0",paddingRight:"0"}} className="text-center align-items-center d-flex">
+          <MDBRow>
             <h1 style={{margin:"auto"}}>Otsikko</h1>
             <p style={{margin:"auto"}}>
               Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -143,7 +141,7 @@ class LandingPage extends Component {
         <MDBCol style={{paddingLeft:"0"}}>
           <img
             tag="img"
-            src={kuva}
+            src={kuva2}
             className="img-fluid"
             alt="image"
             >
