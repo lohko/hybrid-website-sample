@@ -1,33 +1,29 @@
 import React, { Component } from "react";
 import "../styles/Global.css";
 import NavigationBar from "../pages/components/NavigationBar";
-import {
-  MDBRow,
-  MDBCol,
-  MDBCardBody,
-  MDBIcon,
-  MDBBtn,
-  MDBView,
-  MDBMask,
-  MDBContainer
-} from "mdbreact";
+import { MDBRow, MDBCol, MDBIcon, MDBContainer } from "mdbreact";
 
 class ServicesPage extends Component {
   render() {
-    const transparency = '';
+    const transparency = "";
     const fixed = "";
     return (
       <div id="servicespage">
-        <NavigationBar navfixed={fixed} transparency={transparency} servicesactive="active"/>
+        <NavigationBar
+          navfixed={fixed}
+          transparency={transparency}
+          servicesactive="active"
+        />
         <MDBContainer className="my-5">
           <h2 className="h1-responsive font-weight-bold text-center">
-            Your Services
+            Palvelut
           </h2>
           <p className="grey-darken-1-text w-responsive text-center mx-auto mb-5">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            est laborum.
+            Tällä sivulla voit esitellä tuotteesi ja palvelusi lukemattomilla
+            tavoilla. Käytössänne on reaktiiviset ja automaattisesti
+            skaalautuvat kuvakarusellit, kollaasit, blogipostaukset sekä monet
+            muut eri asettelutyylit, jotka valmistamme aina asiakkaamme vision
+            mukaisiksi.
           </p>
 
           <MDBRow>
@@ -49,13 +45,12 @@ class ServicesPage extends Component {
                   />
                 </MDBCol>
                 <MDBCol md="11">
-                  <h5 className="font-weight-bold mb-3 paragraph">
-                    Grow your business
-                  </h5>
+                  <h5 className="font-weight-bold mb-3 paragraph">Unelmoi</h5>
                   <p className="grey-darken-1-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing.
-                    Reprehenderit maiores nam, aperiam minima elit assumenda
-                    voluptate velit.
+                    Voimme taata, ettet varmasti keksi niin hullua ideaa,
+                    ettemme haluaisi olla sitä toteuttamassa. Olemme itsekin
+                    joukko suuruudenhulluja ja intohimolla työtä tekeviä nuoria,
+                    jotka varmasti vastaavat haasteeseen kuin haasteeseen.
                   </p>
                 </MDBCol>
               </MDBRow>
@@ -69,11 +64,12 @@ class ServicesPage extends Component {
                   />
                 </MDBCol>
                 <MDBCol md="11">
-                  <h5 className="font-weight-bold mb-3">Entertainment</h5>
+                  <h5 className="font-weight-bold mb-3">Suunnittele</h5>
                   <p className="grey-darken-1-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing.
-                    Reprehenderit maiores nam, aperiam minima elit assumenda
-                    voluptate velit.
+                    Verkkosivujen suunnittelussa meitä kiehtoo sen rajattomuus.
+                    Näemme uuden projektin aina tyhjänä canvaksena, jossa
+                    jokainen pensselinveto kertoo oman tarinansa ja piirtää
+                    kokonaisuutena kuvan, joka varmasti jää mieleen.
                   </p>
                 </MDBCol>
               </MDBRow>
@@ -87,11 +83,12 @@ class ServicesPage extends Component {
                   />
                 </MDBCol>
                 <MDBCol md="11">
-                  <h5 className="font-weight-bold mb-3">Communication</h5>
+                  <h5 className="font-weight-bold mb-3">Toteuta</h5>
                   <p className="grey-darken-1-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing.
-                    Reprehenderit maiores nam, aperiam minima elit assumenda
-                    voluptate velit.
+                    Käyttämämme työkalut sekä frameworkit varmistavat suurtenkin
+                    kokonaisuuksien virheettömän skaalauksen sekä
+                    responsiivisuuden. Tavaramerkkimme on tinkimättömyys,
+                    tarkkuus sekä toimivuus.
                   </p>
                 </MDBCol>
               </MDBRow>

@@ -11,14 +11,18 @@ import NavigationBar from "../pages/components/NavigationBar";
 
 class ContactPage extends Component {
   render() {
-    const transparency = '';
+    const transparency = "";
     const fixed = "";
     return (
       <div>
-        <NavigationBar navfixed={fixed} transparency={transparency} contactactive="active"/>
+        <NavigationBar
+          navfixed={fixed}
+          transparency={transparency}
+          contactactive="active"
+        />
         <MDBContainer className="my-5">
           <h2 className="h1-responsive font-weight-bold text-center">
-            Contact us
+            Ota Yhteyttä
           </h2>
           <p className="text-center w-responsive mx-auto pb-5">
             Yrityksesi yhteystiedot
@@ -29,11 +33,7 @@ class ContactPage extends Component {
                 <MDBRow>
                   <MDBCol md="6">
                     <div className="md-form mb-0">
-                      <MDBInput
-                        type="text"
-                        id="contact-name"
-                        label="Your name"
-                      />
+                      <MDBInput type="text" id="contact-name" label="Nimi" />
                     </div>
                   </MDBCol>
                   <MDBCol md="6">
@@ -41,7 +41,7 @@ class ContactPage extends Component {
                       <MDBInput
                         type="email"
                         id="contact-email"
-                        label="Your email"
+                        label="Sähköposti"
                       />
                     </div>
                   </MDBCol>
@@ -49,11 +49,7 @@ class ContactPage extends Component {
                 <MDBRow>
                   <MDBCol md="12">
                     <div className="md-form mb-0">
-                      <MDBInput
-                        type="text"
-                        id="contact-subject"
-                        label="Subject"
-                      />
+                      <MDBInput type="text" id="contact-subject" label="Aihe" />
                     </div>
                   </MDBCol>
                 </MDBRow>
@@ -63,7 +59,7 @@ class ContactPage extends Component {
                       <MDBInput
                         type="textarea"
                         id="contact-message"
-                        label="Your message"
+                        label="Viesti"
                       />
                     </div>
                   </MDBCol>
@@ -71,7 +67,7 @@ class ContactPage extends Component {
               </form>
               <div className="text-center text-md-left">
                 <MDBBtn color="primary" size="md">
-                  Send
+                  Lähetä
                 </MDBBtn>
               </div>
             </MDBCol>
@@ -83,7 +79,7 @@ class ContactPage extends Component {
                     size="2x"
                     className="blue-text"
                   />
-                <p>Turku, FI</p>
+                  <p>Turku, FI</p>
                 </li>
                 <li>
                   <MDBIcon icon="phone" size="2x" className="blue-text mt-4" />
