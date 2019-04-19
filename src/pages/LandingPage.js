@@ -173,42 +173,37 @@ class LandingPage extends Component {
           </MDBRow>
         </MDBContainer>
 
-        <MDBRow>
-          <MDBCol md="6" style={{ paddingRight: "0" }}>
-            <img tag="img" src={chart} className="img-fluid" alt="image" />
-          </MDBCol>
-          <MDBCol
-            md="6"
-            style={{ marginLeft: "0", paddingLeft: "0" }}
-            className="text-center align-items-center d-flex"
-            id="FourSectionTop"
-          >
-            <MDBRow>
-              <h2 className="h1-responsive mx-auto font-weight-bold my-5">
+        <MDBContainer>
+          <MDBRow className="justify-content-center">
+            <MDBCol lg="6" className="px-0">
+              <img src={chart} className="img-fluid" alt="image" />
+            </MDBCol>
+            <MDBCol
+              lg="6"
+              className="text-center align-items-center px-0"
+              id="fourSectionTop"
+            >
+              <h2 className="h2-responsive mx-auto font-weight-bold my-5">
                 Ennennäkemätön toteutus
               </h2>
-              <p className="dark-grey-text w-responsive mx-auto mb-5">
+              <p className="dark-grey-text w-responsive mx-auto">
                 Vahvuutemme erittäin kilpaillulla alalla on edullisten
                 hintojemme lisäksi huomattavasti laadukkaampi käyttöliittymä,
                 tarjoamamme lisäpalvelut sekä itse kehittämämme pluginit, jotka
                 toimivat saumattomasti sivuillamme.
               </p>
-            </MDBRow>
-          </MDBCol>
-        </MDBRow>
-        <MDBRow>
-          <MDBCol
-            md="6"
-            className="md-0 mb-4"
-            style={{ marginRight: "0", paddingRight: "0" }}
-            className="text-center align-items-center d-flex"
-            id="FourSectionBottom"
-          >
-            <MDBRow>
-              <h2 className="h1-responsive mx-auto font-weight-bold my-5">
+            </MDBCol>
+          </MDBRow>
+          <MDBRow className="justify-content-center">
+            <MDBCol
+              lg="6"
+              className=" text-center md-0 px-0"
+              id="fourSectionBottom"
+            >
+              <h2 className="h2-responsive mx-auto font-weight-bold my-5">
                 Laadusta tinkimättä
               </h2>
-              <p className="dark-grey-text w-responsive mx-auto mb-5">
+              <p className="dark-grey-text w-responsive mx-auto">
                 Toisin kuin mainostoimistot, emme käytä WordPressin kaltaisia
                 epävakaita työkaluja. Vaan olemme perehtyneet huomattavasti
                 vaativampiin tapoihin rakentaa verkkosivuja. Uskomme vakaasti
@@ -216,12 +211,12 @@ class LandingPage extends Component {
                 liittyviin haasteisiin niin tänäkin päivänä, kuin
                 tulevaisuudessa.
               </p>
-            </MDBRow>
-          </MDBCol>
-          <MDBCol style={{ paddingLeft: "0" }}>
-            <img tag="img" src={kuva2} className="img-fluid" alt="image" />
-          </MDBCol>
-        </MDBRow>
+            </MDBCol>
+            <MDBCol lg="6" className="px-0">
+              <img src={kuva2} className="img-fluid" />
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
 
         <References />
       </div>
