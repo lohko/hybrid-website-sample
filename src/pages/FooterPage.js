@@ -44,7 +44,7 @@ class FooterPage extends Component {
             </MDBBtn>
           </MDBModalFooter>
         </MDBModal>
-        <MDBFooter color="mdb-color darken-4">
+        <MDBFooter color="elegant-color-dark">
           <MDBContainer className="py-3">
             <MDBRow className="mt-3">
               <MDBCol md="3">
@@ -52,7 +52,7 @@ class FooterPage extends Component {
                   <strong>Yrityksen nimi</strong>
                 </h6>
                 <hr
-                  className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                  className="white accent-2 mb-4 mt-0 d-inline-block mx-auto"
                   style={{ width: "60px" }}
                 />
                 <a color="secondary">
@@ -72,7 +72,7 @@ class FooterPage extends Component {
                   <strong>Sosiaalinen media</strong>
                 </h6>
                 <hr
-                  className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                  className="white accent-2 mb-4 mt-0 d-inline-block mx-auto"
                   style={{ width: "60px" }}
                 />
                 <p>
@@ -93,7 +93,7 @@ class FooterPage extends Component {
                   <strong>Sivukartta</strong>
                 </h6>
                 <hr
-                  className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                  className="white accent-2 mb-4 mt-0 d-inline-block mx-auto"
                   style={{ width: "60px" }}
                 />
                 <p>
@@ -114,7 +114,7 @@ class FooterPage extends Component {
                   <strong>Ota yhteyttä</strong>
                 </h6>
                 <hr
-                  className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                  className="white accent-2 mb-4 mt-0 d-inline-block mx-auto"
                   style={{ width: "60px" }}
                 />
                 <p>

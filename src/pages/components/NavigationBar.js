@@ -24,7 +24,7 @@ class NavigationBar extends Component {
   render() {
     return (
       <MDBNavbar
-        color="mdb-color darken-4"
+        color="elegant-color-dark"
         transparent={this.props.transparency}
         dark
         fixed={this.props.navfixed}
